@@ -9,17 +9,7 @@ export default function Home() {
   const [secondNumber, setSecondNumber] = useState("");
   const [operation, setOperation] = useState("");
   const [result, setResult] = useState(0);
-  useEffect(() => {
-    console.log(
-      Number(firstNumber) +
-        " " +
-        operation +
-        " " +
-        Number(secondNumber) +
-        " " +
-        result
-    );
-  }, [firstNumber, secondNumber, result]);
+ 
   const clickNumbers = (val: any) => {
     if (operation === "") {
       setFirstNumber(firstNumber + val);
