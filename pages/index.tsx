@@ -49,12 +49,14 @@ export default function Home() {
     }
     setFirstNumber("");
     setSecondNumber("");
-    setOperation("")
+    setOperation("");
   };
 
   return (
     <div className="h-[500px] w-[500px] p-4 mx-auto mt-[40px] bg-gray-200 shadow-lg rounded-md">
-      <div className="h-[80px] w-[400px] text-6xl font-bold">{result}</div>
+      <div className="h-[80px] w-[400px] text-6xl font-bold">
+        {result ? result : firstNumber + operation + secondNumber}
+      </div>
       <div className=" flex justify-between space-x-10">
         <div className="grid grid-cols-3  gap-4 items-center">
           <div className="bg-green-500 p-2 flex justify-center rounded-md h-[60px] w-[60px] cursor-pointer">
