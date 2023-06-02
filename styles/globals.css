@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.equals {
+  background-color: green;
+  grid-column: 3/5;
+}
+
+.opt {
+  background-color: orange;
+  grid-column: 3/5;
+}
